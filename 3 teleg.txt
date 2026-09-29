@@ -1,0 +1,35 @@
+1. Start "BotFather" 
+
+
+Step 2:  Open "BotFather"
+
+STEP 3:  /start
+
+STEP 4 Create a new Bot 
+
+STEP 5:- Obtain access token 
+
+sudo apt-get install python-pip 
+ Install "telepot"
+
+sudo apt install python3-venv      
+python3 -m venv myenv 
+source myenv/bin/activate
+pip install telepot 
+pip install RPi.GPIO
+
+8.  Clone the git 
+git clone https://github.com/salmanfarisvp/TelegramBot.git 
+cd TelegramBot 
+nano telegrambot.py
+
+9. ) After this the .py file will open. Paste the bot taken here 
+bot = telepot.Bot('your_bot_token') 
+
+python telegrambot.py 
+
+10.  All set, now time to connect the Pi and LED. 
+Connect LED to Pi 
+
+Start our Bot 
+on & off
