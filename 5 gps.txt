@@ -1,0 +1,22 @@
+STEP 1 :- (Create a virtual environment)
+sudo apt install python3-venv
+ python3 -m venv myenv
+source myenv/bin/activate
+
+dtparam=spi=on
+ dtoverlay=pi3-disable-bt 
+core_freq=250 
+enable uart=l
+ force turbo=l
+sudo systemctl stop serial-getty@ttyS0.service
+ sudo systemctl disable serial-getty@ttyS0.service
+ sudo systemctl enable serial-getty@ttyAMA0.service
+
+sudo apt-get install minicom
+pip install pynmea2 --break-system-packages
+sudo cat /dév/ttyS0
+
+code:
+import time
+import serial
+import string
